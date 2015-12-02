@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+}
+
+.square {
+  width: 120px;
+  height: 120px;
+  content: "";
+  background: #ccc;
+  border: 5px solid #000;
+  float: left;
+  list-style: none;
+}
+
+.mark-x {
+  line-height: 120px;
+  text-align: center;
+  color: red;
+  background-color: white;
+  font-size: 80px;
+}
+
+.mark-o {
+  line-height: 120px;
+  text-align: center;
+  color: green;
+  background-color: white;
+  font-size: 80px;
+}
+
+.square:hover{
+  background: yellow;
+}
+
+.grid {
+  width: 400px;
+  cursor: pointer;
+}
