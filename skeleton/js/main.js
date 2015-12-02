@@ -6,6 +6,7 @@ $(function () {
   // Your code here
   var game = new Game();
   var $board = $("figure.ttt");
+  var view = new View(game, $board);
 
   var setupBoard = function () {
     var $grid =  $("<ul></ul>");
@@ -25,24 +26,11 @@ $(function () {
   };
 
   var bindEvents = function (){
-    $board.on("mousedown", ".square", function(e){
-      var pos = $(e.currentTarget).data("data-pos");
-      // console.log($(e.currentTarget).data("data-pos"));
-      game.playMove(pos);
 
-      if (game.board.grid[pos[0]][pos[1]] === "x" ) {
-        $(e.currentTarget).addClass("mark-x");
-        $(e.currentTarget).text("X");
-      } else {
-        $(e.currentTarget).addClass("mark-o");
-        $(e.currentTarget).text("O");
-      }
-
-    });
   };
 
 
-  bindEvents();
+  view.bindEvents();
   setupBoard();
 
 
