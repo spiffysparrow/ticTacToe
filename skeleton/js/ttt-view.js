@@ -36,7 +36,6 @@ View.prototype.makeMove = function ($square) {
       }
 
     }
-
     if (this.game.isOver() && this.game.winner()) {
 
       var $message = $("<div> Winner is " + this.game.currentPlayer + "</div>");
