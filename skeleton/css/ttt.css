@@ -12,6 +12,11 @@ body {
   list-style: none;
 }
 
+.win-message{
+  font-size: 80px;
+  clear: both;
+}
+
 .mark-x {
   line-height: 120px;
   text-align: center;
